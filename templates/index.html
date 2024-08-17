@@ -1,0 +1,25 @@
+{% include 'header.html' %}<html>
+    <head>
+        <title>DK Wheather app</title>
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-image: url('');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        {% block content %}
+
+        {% endblock %}
+    </body>
+    </html>
+    <script>
+        $(document).ready(function(){
+            $("alert").hide(4000);
+        })    
+    </script>
